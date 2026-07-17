@@ -15,9 +15,9 @@ class Option(pygame.sprite.Sprite):
         self.type = type
         self.x = x
         self.y = y
-        self.image = self.image1  # Start with the "off" image
+        self.image = self.image1 
 
-        # Blit the text onto the sprite's image (on top of the image)
+ 
         self.rect = self.image.get_rect(topleft=(x, y))
         self.action = action
         self.clicked = False
