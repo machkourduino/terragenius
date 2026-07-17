@@ -17,9 +17,9 @@ class Button(pygame.sprite.Sprite):
             self.single = True
         self.x = x
         self.y = y
-        self.image = self.image1  # Start with the "off" image
+        self.image = self.image1  
         self.rect = self.image.get_rect(topleft=(x, y))
-        self.is_on = False  # Initial state is "off"
+        self.is_on = False 
         self.action = action
         self.clicked = False
 
