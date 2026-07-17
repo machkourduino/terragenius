@@ -11,16 +11,16 @@ class Seed(pygame.sprite.Sprite):
         self.type = type
         self.x = x
         self.y = y
-        self.image = self.image1  # Start with the "off" image
+        self.image = self.image1 
 
         font = pygame.font.SysFont(pygame.font.get_fonts()[28], 20, True)
 
-        # Blit the text onto the sprite's image (on top of the image)
+
 
         self.image1.blit(font.render(type, True, (17, 54, 66)), (80, 22))
         self.image2.blit(font.render(type, True, (255, 255, 255)), (80, 22))
         self.rect = self.image.get_rect(topleft=(x, y))
-        self.is_on = is_on  # Initial state is "off"
+        self.is_on = is_on  
         self.action = action
         self.clicked = False
 
