@@ -442,9 +442,9 @@ def get_input():
     seed_radius_entry.grid(row=2, column=1, **padding)
 
     submit_button = tk.Button(root, text="Submit", command=submit)
-    submit_button.grid(row=3, columnspan=2, pady=10)  # Span across two columns
+    submit_button.grid(row=3, columnspan=2, pady=10) 
 
-    # Center the window on the screen
+
     root.update_idletasks()
     window_width = root.winfo_width()
     window_height = root.winfo_height()
@@ -785,8 +785,6 @@ while True:
         pygame.draw.rect(screen, (0,0,0), [80, 570, 1200, 10])
         screen.blit(menu_surface, (10, 0))
 
-
-    # Center the image on the screen
     mouse_pos = pygame.mouse.get_pos()
     x_sprites.update()
     x_sprites.draw(screen)
